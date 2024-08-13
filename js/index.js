@@ -33,9 +33,9 @@ const loadContent = (urlFeed) => {
             container.innerHTML = data;
         })
 
-        .catch (function (error)){
+        .catch (function (error){
             console.error('Error in fetching data', error);
-        }
+        )}
 }
 
 // CLOSE YOUR FUNCTION loadContent HERE
