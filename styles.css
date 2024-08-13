@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap');
+
+/*fonts:
+
+Headings: font-family: "Abril Fatface", system-ui;
+Body: font-family: "Quicksand", sans-serif;
+
+logo: font-family: "Sankofa Display", sans-serif;
+*/
+
+
+/*
+Color scheme: Analogous
+
+Dark Brown: #260A15
+Hazel Brown: #A66B37
+Orange Brown: #F2B279
+Brown: #733E1F
+White: #F2F2F2
+
+*/
+
+/* General styling  */
+
+.logo {
+    font-family: "Sankofa Display", sans-serif;
+}
+
+body p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.75rem;
+}
+
+body h1 {
+    font-family: "Abril Fatface", system-ui;
+    font-size: 0.75rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li a {
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+
+nav {
+    width: 100%;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+
+
+.masthead {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/seasalt-crystal-structure-1198330.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* nav styling  */
+
+nav ul li {
+    list-style: none;
+    width: 100%;
+    height: 5vh;
+    margin: 0;
+    margin-bottom: 0.3rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #260A15;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+/* tablet and desktop styling  */
+
+@media only screen and (min-width: 35rem) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 3rem;
+    }
+
+    nav ul li {
+        width: 20%;
+        border-radius: 0.2rem;
+
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    body p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1rem;
+    }
+
+    body h1 {
+        font-family: "Abril Fatface", system-ui;
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 3rem;
+        margin-left: 5rem;
+    }
+
+    nav ul li {
+        width: 20%;
+        border-radius: 0.2rem;
+
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-left: 10rem;
+    }
+
+    body p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.25rem;
+    }
+
+    body h1 {
+        font-family: "Abril Fatface", system-ui;
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        margin-left: 8rem;
+    }
+
+    a {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* articles styling  */
+
+figure img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+article {
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+article h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tablet styling  */
+@media only screen and (min-width: 35rem) {
+
+    figure {
+        float: left;
+        width: 40%;
+        padding: 0;
+        margin: 0;
+        margin-right: 1rem;
+    }
+
+    figcaption {
+        margin-bottom: 1rem;
+    }
+
+    article {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    article h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article {
+        clear: both;
+    }
+}
+
+/* desktop styling  */
+
+@media only screen and (min-width: 80rem) {
+
+    figure {
+        width: 40%;
+        padding: 0;
+        margin: 0;
+        margin-right: 1rem;
+        margin-top: 5rem;
+    }
+
+    figcaption {
+        margin-bottom: 1rem;
+    }
+
+    article {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    article h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article {
+        clear: both;
+        display: flex;
+    }
+
+    article div {
+        width: 60%;
+    }
+
+    .wrapper {
+        max-width: 60rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* cards styling for portfolio  */
+
+.cardsmain {
+    display: grid;
+    grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f';
+}
+
+.card1 {
+    grid-area: a;
+}
+
+.card2 {
+    grid-area: b;
+}
+
+.card3 {
+    grid-area: c;
+}
+
+.card4 {
+    grid-area: d;
+}
+
+.card5 {
+    grid-area: e;
+}
+
+.card6 {
+    grid-area: f;
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+}
+
+.cards {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4rem;
+}
+
+.cards p {
+    background-color: #A66B37;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+/* tablet styling  */
+
+@media only screen and (min-width: 35rem) {
+    .cardsmain {
+        display: grid;
+        grid-template-areas:
+            'a b'
+            'c d'
+            'e f';
+        gap: 1rem;
+    }
+
+
+    .card1 {
+        grid-area: a;
+    }
+
+    .card2 {
+        grid-area: b;
+    }
+
+    .card3 {
+        grid-area: c;
+    }
+
+    .card4 {
+        grid-area: d;
+    }
+
+    .card5 {
+        grid-area: e;
+    }
+
+    .card6 {
+        grid-area: f;
+    }
+}
+
+
+@media only screen and (min-width: 80rem) {
+
+
+
+    .cardsmain {
+        display: grid;
+        grid-template-areas:
+            'a b c'
+            'd e f';
+
+        gap: 1rem;
+    }
+
+
+    .card1 {
+        grid-area: a;
+    }
+
+    .card2 {
+        grid-area: b;
+    }
+
+    .card3 {
+        grid-area: c;
+    }
+
+    .card4 {
+        grid-area: d;
+    }
+
+    .card5 {
+        grid-area: e;
+    }
+
+    .card6 {
+        grid-area: f;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* footer styling  */
+footer {
+    clear: both;
+    background-color: #A66B37;
+    display: flex;
+    border-radius: 0.3rem;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* footer styling  */
