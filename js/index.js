@@ -26,7 +26,7 @@ const loadContent = (urlFeed) => {
                 return response.text();
             }
 
-            throw new Error(response.statusText);
+            throw new Error('Network Issues');
         })
 
         .then(function (data) {
@@ -34,7 +34,7 @@ const loadContent = (urlFeed) => {
         })
 
         .catch (function (error)){
-            console.error('Error in fetching data');
+            console.error('Error in fetching data', error);
         }
 }
 
