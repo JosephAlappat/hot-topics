@@ -26,7 +26,7 @@ const loadContent = (urlFeed) => {
                 return response.text();
             }
 
-            throw new Error(response.statusText);
+            throw Error(response.statusText);
         })
 
         .then(function (data) {
