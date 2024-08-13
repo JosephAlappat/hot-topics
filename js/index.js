@@ -1,7 +1,7 @@
 // GET THE REFERENCES
 const container = document.getElementById('dynamic-content');
 const links = document.querySelectorAll('nav ul li a');
-let url = '../partials/articles.html';
+let url = './partials/articles.html';
 
 
 // CREATE THE FUNCTION THAT WILL LOAD THE REQUESTED PARTIAL
@@ -26,7 +26,7 @@ const loadContent = (urlFeed) => {
                 return response.text();
             }
 
-            throw new Error(response.statusText);
+            throw Error(response.statusText);
         })
 
         .then(function (data) {
