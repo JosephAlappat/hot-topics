@@ -22,20 +22,20 @@ const loadContent = (urlFeed) => {
     // RUN THE fetch(urlFeed).then().then().catch()
     fetch(urlFeed)
         .then(function (response) {
-            if (response.statusText === "OK") {
+            if (response.ok) {
                 return response.text();
             }
 
-            throw Error(response.statusText);
+            throw new Error(response.statusText);
         })
 
         .then(function (data) {
             container.innerHTML = data;
         })
 
-        .catch(
-            console.log('Error in fetching data')
-        )
+        .catch (function (error)){
+            console.error('Error in fetching data');
+        }
 }
 
 // CLOSE YOUR FUNCTION loadContent HERE
